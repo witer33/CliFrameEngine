@@ -164,11 +164,9 @@ class escapes:
             rgb.append("0")
             rgb.append("0")
         if not background:
-            return "\033[38;2;" + str(int(rgb[0], 16)) + ";" + str(int(rgb[1], 16)) + ";" + str(
-                int(rgb[2], 16)) + "m"
+            return "\033[38;2;" + str(int(rgb[0], 16)) + ";" + str(int(rgb[1], 16)) + ";" + str(int(rgb[2], 16)) + "m"
         else:
-            return "\033[48;2;" + str(int(rgb[0], 16)) + ";" + str(int(rgb[1], 16)) + ";" + str(
-                int(rgb[2], 16)) + "m"
+            return "\033[48;2;" + str(int(rgb[0], 16)) + ";" + str(int(rgb[1], 16)) + ";" + str(int(rgb[2], 16)) + "m"
 
 class engine:
 
